@@ -1,0 +1,1 @@
+This directory contains tasks from the pointers and arrays project. There are 9 compulsory tasks here and two optional advanced tasks. I will try to do all of them but let's first take the compuslory ones first
