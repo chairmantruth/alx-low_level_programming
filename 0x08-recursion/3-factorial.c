@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * factorial - returns the factorial of numbers
+ *
+ * @n: "number whose factorial is to be"
+ * Return: varies
+ */
+
 int factorial(int n)
 {
 	if (n < 0)
