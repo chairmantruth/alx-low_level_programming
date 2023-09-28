@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * main - print string
- *
- * Return: Always 0
+ *_puts_recursion - print a dtring with recursion
+ *@s: string that we need to print
+ * Return: no return
  */
 
 void _puts_recursion (char *s)
