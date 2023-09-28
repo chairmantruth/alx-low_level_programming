@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main - prints string in reverse
+ * _print_rev_recursion - reverse string
  *
- * Return: Always 0
+ * Return:no return
  */
 void _print_rev_recursion(char *s)
 {
-	if (s != '\0')
+	if (*s != '\0')
 	{
 		_print_rev_recursion(s+1);
 		_putchar(*s);
