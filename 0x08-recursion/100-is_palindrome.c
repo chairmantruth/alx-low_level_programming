@@ -1,34 +1,34 @@
 #include "main.h"
 /**
-*longitud - function that returns the power of number
+*longpow - function that returns the power of number
 *@s: string
 *
 *Return: length of a string
 */
-int longitud(char *s)
+int longpow(char *s)
 {
 	int l = 0;
 
 	if (*s != '\0')
 	{
 		l++;
-		return (longitud(s + 1) + l);
+		return (longpow(s + 1) + l);
 	}
 	return (l);
 }
 /**
- *comparar - function that returns the power of number
+ *funpow - function that returns the power of number
  *@i: original number
  *@l: counter to compare multiplication
  *@s: string
  *Return: square root
  */
-int comparar(int i, int l, char *s)
+int funpow(int i, int l, char *s)
 {
 	if (i >= l)
 		return (1);
 	else if (s[i] == s[l])
-		return (comparar(i + 1, l - 1, s));
+		return (funpow(i + 1, l - 1, s));
 	else
 		return (0);
 }
@@ -39,9 +39,9 @@ int comparar(int i, int l, char *s)
  */
 int is_palindrome(char *s)
 {
-	int l = longitud(s);
+	int l = longpow(s);
 	int i = 0;
 
-	return (comparar(i, l - 1, s));
+	return (funpow(i, l - 1, s));
 }
 
